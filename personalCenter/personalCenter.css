@@ -1,0 +1,783 @@
+/* 个人中心 */
+.per-center-warpper {
+	margin-top: 70px;
+}
+
+/* 三个公共样式 */
+.per-center-right>ul>li {
+	display: none;
+}
+
+.per-center-right>ul>li.active {
+	display: block;
+}
+
+/* 左侧个人中心 */
+.per-center-left {
+	width: 12%;
+	float: left;
+}
+
+.per-center-left>h3 {
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding: 20px 0;
+}
+
+.per-center-left>ul {}
+
+.per-center-left>ul>hr {
+	border: 0.7px solid rgb(221, 221, 221);
+	margin: 10px 0;
+}
+
+.per-center-left>ul>li {
+	box-sizing: border-box;
+	padding: 5px 0;
+	vertical-align: middle;
+}
+
+.per-center-left>ul>li:first-child {
+	padding-top: 20px;
+}
+
+.per-center-left>ul>li>a,
+.per-center-left>ul>li>a:before {
+	vertical-align: middle;
+}
+
+.per-center-left>ul>li>a {
+	font-size: 14px;
+	color: #191e1f;
+	font-size: 500;
+	position: relative;
+	display: inline-block;
+	padding-left: 13px;
+	box-sizing: border-box;
+}
+
+.per-center-left>ul>li>a.active {
+	font-weight: 600;
+	color: rgb(210, 31, 70);
+	text-decoration: none;
+}
+
+/* 左侧栏a标签伪元素 */
+.per-center-left>ul>li>a:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 16px;
+	background-color: rgb(210, 31, 70);
+	display: none;
+}
+
+.per-center-left>ul>li>a.active:after {
+	display: inline-block;
+}
+
+/* 鼠标划过的样式 */
+.per-center-left>ul>li>a:hover {
+	color: rgb(210, 31, 70);
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.per-center-left>ul>li>a.active:hover {
+	font-weight: 600;
+}
+
+/* 右侧个人中心 */
+.per-center-right {
+	float: right;
+	width: 80%;
+}
+
+/* 我的订单 */
+.order-wrapper {}
+
+.active {
+	display: block;
+}
+
+.order-tab-wrapper {
+	position: relative;
+}
+
+ul.order-tab {
+	border-bottom: 1px solid rgb(221, 221, 221);
+
+}
+
+ul.order-tab>li {
+	float: left;
+	box-sizing: border-box;
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight: 600;
+	width: calc(70% / 5);
+	text-align: center;
+}
+
+ul.order-tab>li.active {
+	color: rgb(227, 20, 54);
+}
+/* 右边垃圾删除订单 */
+.order-tab-wrapper>.rubbish {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 20px 0;
+}
+.order-tab-wrapper>.rubbish>* {
+	vertical-align: middle;
+}
+
+.order-tab-wrapper>.rubbish>span {
+	display: inline-block;
+	width: 19px;
+	height: 20px;
+	background: url(../images/personalCenter/002.png) no-repeat;
+}
+
+.order-tab-wrapper>.rubbish>p {
+	display: inline-block;
+}
+
+/* 删除订单结束 */
+.order-tab-wrapper>span {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: calc(70% / 5);
+	height: 2px;
+	background-color: rgb(227, 20, 54);
+	transition: all 0.2s;
+}
+
+.order-tip {
+	margin-top: 20px;
+	background-color: #fff8db;
+	border: 1px solid #ddd;
+	padding: 18px 0;
+	padding-left: 20px;
+}
+
+.order-tip>* {
+	vertical-align: middle;
+}
+
+.order-tip>span {
+	display: inline-block;
+	background: url(../images/personalCenter/001.png);
+	width: 16px;
+	height: 16px;
+}
+
+.order-tip>a {
+	color: #333;
+	text-decoration: underline;
+}
+
+.order-tip>a:hover {
+	color: rgb(227, 20, 54);
+}
+
+/* 我的订单------选项卡的儿子们--------begin */
+ul.order-tab-son {
+	padding: 40px 0;
+}
+ul.order-tab-son>li {}
+.shopping-wrapper {}
+.search-wrapper {
+	display: inline-block;
+	border: 1px solid #ddd;
+}
+.search-wrapper>input {
+	width: 200px;
+	outline: none;
+	border-width: 0;
+	padding-left: 1em;
+	
+}
+.search-wrapper>.search {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+    background-color: #f7f7f7;
+	font-size: 15px;
+}
+.search-wrapper>.search:hover {
+	background-color: #E31436;
+	color: #FFFFFF;
+}
+.shopping {
+	float: right;
+}
+.order-time-wrapper {
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+.order-time-wrapper>span {
+}
+ul.order-time {
+	float: right;
+}
+ul.order-time>li {
+	padding: 5px 50px 5px 20px;
+}
+
+ul.order-time>li>a {}
+.state-wrapper {
+	display: inline-block;
+}
+.state-wrapper>span {
+	
+}
+ul.state {
+	float: right;
+}
+ul.state>li {
+	padding: 5px 0 5px 20px;
+	width: 130px;
+}
+ul.state>li>a {}
+/* 公共样式 */
+ul.order-time>li,ul.state>li{
+	border: 1px solid rgb(221, 221, 221);
+	position: relative;
+	display: none;
+}
+ul.order-time>li:first-child,ul.state>li:first-child {
+	display: block;
+}
+ul.order-time>li:first-child:after,ul.state>li:first-child:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-25%);
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top: 5px solid #E31436;
+}
+ul.order-time>li>a,ul.state>li>a {
+	color: #333333;
+	font-size: 14px;
+}
+.order-time-wrapper>span,.state-wrapper>span {
+	font-size: 14px;
+}
+/* 我的订单------选项卡的儿子们--------end */
+
+/* 我的实名认证 */
+.id-wrapper {}
+
+.id-wrapper>h3 {
+	padding: 20px 0;
+}
+
+/* 我的实名认证-----------第一模块 */
+.id-tip-wrapper {
+	background-color: #fff8db;
+	border: 1px solid #ddd;
+	padding: 18px 0;
+	padding-left: 20px;
+}
+
+.id-tip-wrapper>span {
+	display: inline-block;
+	background: url(../images/personalCenter/001.png);
+	width: 16px;
+	height: 16px;
+}
+
+.id-tip-wrapper>p {
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.id-tip-wrapper>span,
+.id-tip-wrapper>p {
+	vertical-align: middle;
+}
+
+ul.id-tip {}
+
+ul.id-tip>li {
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+ul.id-tip>li:nth-child(1) {
+	color: rgb(227, 20, 54);
+}
+
+ul.id-tip>li:nth-child(2) {
+	padding: 15px 0 5px 20px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+ul.id-tip>li:nth-child(3) {
+	font-size: 12px;
+}
+
+/* 我的实名认证-----------第二模块 */
+.id-input {}
+
+.id-input>label {
+	display: inline-block;
+	padding: 30px 20px 0 15px;
+	font-size: 14px;
+}
+
+.id-input>label.phone {
+	padding-left: 0;
+}
+
+/* 我的实名认证---我的地址管理-----红色星号公共样式*/
+.id-input>label:before,
+.address-input label:before {
+	content: "*";
+	display: inline-block;
+	color: rgb(227, 20, 54);
+	padding-right: 5px;
+}
+
+.id-input>input {
+	height: 35px;
+	width: 300px;
+	text-indent: 1em;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.id-input-imgwrapper {
+	padding-top: 30px;
+	position: relative;
+}
+
+.id-input-imgwrapper>span {
+	display: inline-block;
+	padding: 0 25px 0 20px;
+	font-size: 14px;
+	float: left;
+}
+
+.id-input-img1-wrapper {
+	position: relative;
+}
+
+.id-input-img1-wrapper input.file1,
+.id-input-img1-wrapper input.file2 {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	width: 200px;
+	height: 125px;
+}
+
+.id-input-img1-wrapper input.file1 {
+	left: 110px;
+}
+
+.id-input-img1-wrapper input.file2 {
+	left: 321px;
+}
+
+ul.id-input-img1 {
+	display: inline-block;
+}
+
+ul.id-input-img1>li {
+	float: left;
+	box-sizing: border-box;
+	width: 200px;
+	height: 125px;
+	background-color: rgb(248, 248, 248);
+	border: 1px solid rgb(221, 221, 221);
+	font-size: 14px;
+	text-align: center;
+	line-height: 125px;
+}
+
+ul.id-input-img1>li:first-child,
+ul.id-input-img2>li:first-child {
+	margin-right: 20px;
+}
+
+ul.id-input-img2 {
+	padding-left: 100px;
+}
+
+ul.id-input-img2>li {
+	float: left;
+	padding-top: 5px;
+	box-sizing: border-box;
+	width: 200px;
+	font-size: 14px;
+	text-align: center;
+}
+
+ul.id-input-img2>li>span {}
+
+ul.id-input-img2>li>i {
+	display: block;
+	width: 61px;
+	height: 38px;
+	background: url(../images/personalCenter/004.jpg) left bottom;
+	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+ul.id-input-img2>li:nth-child(2)>i {
+	background: url(../images/personalCenter/004.jpg) -63px bottom;
+}
+
+ul.id-input-img3 {
+	padding: 10px 0 0 100px;
+	color: rgb(153, 153, 153);
+}
+
+ul.id-input-img3>li {}
+
+/* 与收货地址button公共样式 */
+.id-input-imgwrapper>button,
+.address-wrapper>button {
+	font-size: 25px;
+	color: aliceblue;
+	font-weight: 800;
+	margin: 30px 0 0 100px;
+	padding: 8px 55px;
+	background-color: rgb(227, 20, 54);
+	border: 1px solid rgb(227, 20, 54);
+	outline: none;
+	cursor: pointer;
+}
+
+.id-input-imgwrapper>button:hover,
+.address-wrapper>button:hover {
+	opacity: 0.8;
+}
+
+ul.id-input-imgposition {
+	position: absolute;
+	left: 65%;
+	top: 30px;
+}
+
+ul.id-input-imgposition>li {
+	text-align: center;
+	padding-top: 5px;
+}
+
+ul.id-input-imgposition>li:nth-child(1) {
+	background: url(../images/personalCenter/005.jpg) center center;
+	background-size: 100% 100%;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+/* 我的实名认证-----------第三模块 */
+.id-proplem-wrapper {
+	margin-bottom: 50px;
+}
+
+.id-proplem-wrapper>h3 {
+	margin-top: 30px;
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.id-proplem-wrapper>p {
+	font-size: 14px;
+	padding-top: 20px;
+	color: #333;
+
+}
+
+.id-proplem-wrapper>p.id-proplem {
+	padding-left: 1.5em;
+	padding-top: 10px;
+}
+
+
+
+/* 我的地址管理----------------------begin */
+.address-wrapper {}
+
+.address-wrapper>h3 {
+	border-bottom: 1px solid rgb(221, 221, 221);
+	padding: 20px 0;
+}
+
+.address-wrapper>ul {
+	padding: 20px 0;
+}
+
+.address-wrapper>ul>li:nth-child(1) {
+	font-size: 15px;
+	font-weight: 600;
+	float: left;
+}
+
+.address-wrapper>ul>li:nth-child(1)>span {
+	color: rgb(153, 153, 153);
+	font-weight: 400;
+}
+
+.address-wrapper>ul>li:nth-child(2) {
+	float: right;
+}
+
+.address-wrapper>ul>li:nth-child(2)>a {
+	color: rgb(227, 20, 54);
+	font-size: 14px;
+}
+
+.address-wrapper>ul>li:nth-child(2)>a:hover {
+	text-decoration: underline;
+}
+
+/* 我的地址管理-------table */
+.address-wrapper>table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+
+}
+
+.address-wrapper thead {
+	color: rgb(153, 153, 153);
+	font-size: 14px;
+
+}
+
+.address-wrapper thead>tr {
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.address-wrapper thead>tr>td {
+	padding: 15px 0;
+}
+
+.address-wrapper thead>tr>td:nth-child(1) {
+	width: 15%;
+}
+
+.address-wrapper thead>tr>td:nth-child(2) {
+	width: 35%;
+	text-align: left;
+}
+
+.address-wrapper thead>tr>td:nth-child(3) {
+	width: 20%;
+}
+
+.address-wrapper thead>tr>td:nth-child(4) {
+	width: 15%;
+}
+
+.address-wrapper thead>tr>td:nth-child(5) {
+	width: 15%;
+}
+
+.address-wrapper tbody {}
+
+.address-wrapper tbody>tr {
+	border: 1px solid rgb(221, 221, 221);
+
+}
+
+.address-wrapper tbody>tr>td {
+	padding: 30px 0;
+	color: #333;
+}
+
+.address-wrapper tbody>tr>td:nth-child(2) {
+	text-align: left;
+}
+
+.address-wrapper tbody>tr>td>div>a {
+	color: #51b8f1;
+}
+.address-wrapper tbody>tr>td>div>a:hover {
+	text-decoration: underline;
+}
+/* ------------begin */
+.address-wrapper tbody>tr input {
+	color: #51b8f1;
+	border-width: 0;
+	outline: none;
+	background-color: transparent;
+	font-size: 15px;
+}
+.address-wrapper tbody>tr input:hover {
+	text-decoration: underline;
+}
+.btn-default.default{
+	display: inline-block;
+	border: 2px solid #e31436;
+	color: #e31436;
+	padding: 5px 15px;
+	font-size: 12px;
+	border-radius: 20px;
+}
+/* -----------end */
+.address-wrapper tbody>tr>td span.address {
+	display: inline-block;
+	border: 2px solid #e31436;
+	color: #e31436;
+	padding: 5px 15px;
+	font-size: 12px;
+	border-radius: 20px;
+}
+/* 我的地址管理---------------------end */
+.address-wrapper>p {
+	padding: 20px 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.address-input {
+	padding-left: 40px;
+}
+
+.address-input label {
+	display: inline-block;
+	font-size: 13px;
+	padding: 15px 15px 15px 20px;
+}
+
+/* 红色星号在实名认证公共样式里 */
+.address-input .address-place {
+	width: 200px;
+	height: 30px;
+}
+
+.address-input input {
+	height: 30px;
+	text-indent: 1em;
+	outline: none;
+}
+
+.address-input input.address-address {
+	width: 500px;
+	height: 70px;
+}
+
+.address-input input.address-input1 {
+	width: 500px;
+}
+
+.address-input input.address-telephone {
+	width: 150px;
+}
+
+.address-input .address-label1 {
+	padding-left: calc(20px - 1em);
+}
+
+.address-input .address-label2 {
+	padding-left: calc(20px + 2em);
+}
+
+.address-wrapper>button {
+	font-size: 18px;
+	font-weight: 400;
+	margin-left: 140px;
+}
+
+/* 删除时的膜布---------------------begin */
+/* 膜布公共样式 */
+.cloth-wrapper,.delete-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.cloth,.delete {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 450px;
+	height: 200px;
+	background-color: #fff;
+}
+.cloth>p:nth-child(1),.delete>p:nth-child(1) {
+	color: #999;
+	padding: 15px 25px;
+	border-bottom: 1px dotted #ddd;
+}
+.cloth>p:nth-child(2),.delete-wrapper>.delete>p:nth-child(2) {
+	color: #333333;
+	text-align: center;
+}
+/* 地址栏膜布 */
+.cloth>p:nth-child(2) {
+	font-size: 25px;
+	padding: 50px 0;
+}
+.cloth>p:nth-child(2):before {
+	content: "√";
+	display: inline-block;
+	color: #FFFFFF;
+	width: 35px;
+	height: 35px;
+	background-color: rgb(93,197,64);
+	border-radius: 35px;
+	margin-right: 5px;
+}
+.delete-wrapper {
+	display: none;
+}
+.delete-wrapper>.delete>p:nth-child(2) {
+	font-size: 20px;
+	padding: 30px 0;
+}
+.delete-wrapper>.delete>p:nth-child(2):before {
+	content: "!";
+	display: inline-block;
+	color: #FFFFFF;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(227,20,54);
+	border-radius: 30px;
+	margin-right: 5px;
+}
+.delete-wrapper input {
+	padding: 8px 25px;
+}
+.delete-wrapper .ok,.delete-wrapper .notok {
+	outline: none;
+}
+.delete-wrapper .ok {
+	margin-left: 30%;
+	background-color: #E31436;
+	color: #FFFFFF;
+	border-width: 0px;
+}
+.delete-wrapper .notok {
+	float: right;
+	margin-right: 30%;
+	border: 1px solid #DDDDDD;
+	background-color: #fff;
+}
+.delete-wrapper .notok:hover {
+	border: 1px solid #E31436;
+}
+/* 删除时的膜布------------------------end */

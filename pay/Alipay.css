@@ -1,0 +1,457 @@
+body { background-color: #F3F3F3;}
+.alipay-platform-wrapper { background-color: white;}
+.alipay-platform-wrapper>.alipay-platform {
+	padding: 10px;
+}
+.alipay-platform-lt {
+	float: left;
+}
+.alipay-platform-lt>i {
+	color: #00AAEE;
+	font-size: 40px;
+}
+.alipay-platform-rt {
+	float: left;
+	margin-left: 10px;
+	vertical-align: middle;
+	padding-right: 10px;
+	border-right: 2px solid #A9A9A9;
+}
+.alipay-platform-rt>p {}
+.alipay-platform-rt>p:nth-child(1) {
+	font-size: 19px;
+	font-weight: bold;
+}
+.alipay-platform-rt>p:nth-child(2) {
+	font-size: 13px;
+	font-weight: bold;
+}
+.alipay-platform>a {
+	display: block;
+	height: 100%;
+	padding-top: 20px;
+}
+.alipay-platform>a>div {
+	float: left;
+	padding-left: 10px;
+	color: #A9A9A9;
+}
+.alipay-platform>a>div>span {
+	font-size: 15px;
+}
+/* 订单号 */
+.orderID {
+	margin-bottom: 20px;
+}
+.orderID>p.timing {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.orderID>p.timing>span{}
+.orderID>p a {
+	color: blue;
+}
+.orderID>p.orderid {}
+.orderID>p.orderid>span {}
+.orderID>p.orderid>span:nth-child(3) {
+	float: right;
+	margin-right: 10px;
+}
+.orderID>p.orderid>span>span {
+	font-weight: bold;
+	color: #FD6D00;
+	font-size: 20px;
+}
+.orderID>p.rate {
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+/* 扫二维码 */
+.scan-alipay-wrapper {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.scan-alipay-wrapper>ul {
+	width: 200%;
+	font-size: 0;
+}
+.scan-alipay-wrapper>ul>li {
+	width: 50%;
+	height: 400px;
+	display: inline-block;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+}
+.scan-alipay-wrapper>ul>li.scan-alipay {
+	background-color: green;
+	/* margin-left: 0%; */
+}
+li.scan-alipay>.scan-alipay-lt {
+	float: left;
+	width: 85%;
+	height: 100%;
+	background-color: white;
+	position: relative;
+}
+
+/* 二维码左 */
+.scan-alipay-lt>.paycode-alipay {
+	float: left;
+	width: 60%;
+	height: 100%;
+	font-size: 15px;
+}
+.paycode-alipay>.paycode-alipay-all {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.paycode-alipay-all>p:nth-child(1) {
+	padding-top: 50px;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+.paycode-alipay-all>p:nth-child(2) {
+	font-size: 20px;
+	font-weight: bold;
+	color: coral;
+}
+
+.paycode-alipay-all>.qrcode-wrapper {
+	width: 150px;
+	height: 200px;
+	background-color: white;
+	box-shadow: 0 0 3px 2px gray;
+	margin-top: 20px;
+	padding: 10px;
+}
+.qrcode-wrapper>.qrcode01 {
+	height: 70%;
+	background: url(../images/pay/pay-Alipay002.png) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.qrcode-wrapper>.qrcode01>img {
+	width: 25%;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%);
+}
+.qrcode-wrapper>.qrcode02 {
+	height: 30%;
+	padding: 10px;
+	margin-top: 10px;
+}
+.qrcode02>i {
+	font-size: 40px;
+	color: #FFAE21;
+}
+.qrcode-wrapper>.qrcode02>div {
+	display: inline-block;
+}
+.qrcode02>div>p {
+	font-size: 12px;
+}
+.qrcode-wrapper>p>a {
+	font-size: 12px;
+	color: #A9A9A9;
+	margin-top: 5px;
+}
+
+/* 放大镜右 */
+.scan-alipay-lt>.magnifier-alipay {
+	float: left;
+	width: 40%;
+	height: 100%;
+	position: relative;
+}
+.magnifier-alipay>.kuang {
+	position: absolute;
+	left: 10%;
+	top: 30%;
+	transform: translateY(-50%);
+	height: 150px;
+	width: 150px;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 10px;
+	padding: 5px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: all 2s;
+}
+.jian {
+	position: absolute;
+	left: 38px;
+	top: 40%;
+	transform: translate(-50%);
+}
+.jian::before,
+.jian::after {
+	content: '';
+	width: 0;
+	height: 0;
+	font-size: 0;
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	transform: translateX(-100%);
+	border: 20px dashed transparent;
+	border-top-style: dotted;
+	border-bottom-style: solid;
+}
+.jian::before {
+	border-right-color: lightgray;
+	border-width: 12px;
+}
+.jian:after {
+	border-width: 11px;
+	border-right-color: white;
+}
+
+ul.kuang-img {
+	width: 500%;
+}
+ul.kuang-img>li {
+	width: 20%;
+	float: left;
+}
+ul.kuang-img>li>a {
+	display: block;		
+	font-size: 0;  
+}
+ul.kuang-img>li>a>img {
+	width: 100%;
+}
+ul.kuang-button {
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
+	
+}
+ul.kuang-button>li {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	padding-left: 10px;
+	background-color: #A5A5A5;
+	border-radius: 7px;
+}
+ul.kuang-button>li.active {
+	background-color: #4D4D4D;
+}
+
+/* 按钮右 */
+li.scan-alipay>.scan-alipay-rt {
+	float: left;
+	width: 15%;
+	height: 100%;
+	background-color: #E6E6E6;
+	text-align: center;
+}
+.scan-alipay-rt>img {
+	width: 60%;
+	margin-top: 120px;
+}
+.scan-alipay-rt>input {
+	margin-top: 10px;
+	border: none;
+	background-color: #00AEEF;
+	border-radius: 5px;
+	color: white;
+	width: 100px;
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+.scan-alipay-wrapper>ul>li.record-alipay {
+	background-color: #E6E6E6;
+}
+li.record-alipay>.record-alipay-lt {
+	float: left;
+	width: 15%;
+	height: 100%;
+	background-color: rgb(230,230,230);
+	text-align: center;
+}
+.record-alipay-lt>p {
+	font-size: 17px;
+	padding-top: 100px;
+}
+.record-alipay-lt>img {
+	width: 50%;
+	margin-bottom: 5px;
+}
+.record-alipay-lt>input {
+	margin-top: 10px;
+	border: none;
+	background-color: #00AEEF;
+	border-radius: 5px;
+	color: white;
+	width: 100px;
+	height: 40px;
+	outline: none;
+	cursor: pointer;
+}
+
+/* 右边登录支付宝账号 */
+li.record-alipay>.record-alipay-rt {
+	float: left;
+	width: 85%;
+	height: 100%;
+	background-color: white;
+	position: relative;
+}
+.record-alipay-rt>.record-alipay-rt-wrapper {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+	transform: translate(-50%);
+}
+.record-alipay-rt-title {
+	margin-bottom: 2px;
+}
+.record-alipay-rt-title>h5 {
+	font-size: 17px;
+	display: inline-block;
+}
+.record-alipay-rt-title>span>a {
+	float: right;
+	color: #0000FF;
+	font-size: 13px;
+	font-weight: bold;
+}
+.hr {
+	height: 2px;
+	width: 100%;
+	background-color: lightgray;
+	margin-bottom: 20px;
+}
+.write {
+	font-size: 16px;
+}
+.write>lable {
+	background-color: #000000;
+}
+.write>span>a {
+	font-size: 12px;
+	color: #00BFFF;
+	float: right;
+}
+.write>.input-wrapper {
+	width: 300px;
+	height: 30px;
+	background-color: white;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 1px solid lightgray;
+}
+.write>.input-wrapper>input {
+	border: none;
+	outline: none;
+	text-indent: 1em;
+	line-height: 30px;
+}
+.write>p {
+	font-size: 13px;
+	color: gray;
+	margin-bottom: 10px;
+}
+.write>p>span {
+	font-size: 15px;
+	color: red;
+}
+.write>span.agree>a {
+	font-size: 13px;
+	float: none;
+	color: #00BFFF;
+}
+.record-alipay-rt-wrapper>input[type=button] {
+	margin-top: 10px;
+	width: 300px;
+	height: 30px;
+	border: none;
+	outline: none;
+	background-color: #00AEEF;
+	color: white;
+	border-radius: 5px;
+}
+
+/* 页脚 */
+.alipay-foot-adress {
+	text-align: center;
+	color: gray;
+}
+.alipay-foot-img {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+
+/* 过期显示 */
+.order-overdue {
+	height: 77px;
+	text-align: center;
+	line-height: 77px;
+	font-size: 25px;
+	font-weight: bold;
+	display: none;
+}
+.order-overdue>a {
+	color: red;
+}
+/* 购买成功 */
+.buysuccess-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	/* 隐藏 */
+}
+.form-wrapper {
+	margin-top: 20px;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 100px 130px;
+	text-align: center;
+}
+.form-wrapper>i {
+	font-size: 55px;
+	color: #7CFC00;
+	vertical-align: middle;
+}
+.form-wrapper>.success-text {
+	display: inline-block;
+	font-size: 25px;
+	text-align: left;
+	margin-left: 20px;
+}
+.form-wrapper>div input {
+	border: none;
+	outline: none;
+	padding: 10px 40px;
+	background-color: red;
+	color: white;
+	margin-top: 50px;
+	margin-right: 20px;
+	font-size: 15px;
+}

@@ -1,0 +1,349 @@
+/* 页头部分 */
+.nav {
+	background-color: #000;
+	border-bottom: 1px solid #ededee;
+	height: 30px;
+	width: 100%;
+	z-index: 100;
+}
+/*公共部分*/
+ul.nav-right>li>a,ul.nav-left>li>a {
+	font-size: 12px;
+	color: #999;
+	padding: 0 10px;
+	line-height: 30px;
+}
+/* 页头左边 */
+ul.nav-left {
+	float: left;
+	font-size: 0;
+}
+ul.nav-left>li {
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	position: relative;
+	z-index: 100;
+}
+ul.nav-left>li>a {}
+/*二级*/
+a.nav-left-sub {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+}
+a.nav-left-sub>img {
+}
+
+/*左边滑过部分*/
+ul.nav-left>li>a:hover {
+	color: #fff;
+}
+ul.nav-left>li:hover>a.nav-left-sub {
+	display: block;
+}
+/* 页头右边 */
+ul.nav-right {
+	float: right;
+}
+ul.nav-right>li {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	z-index: 100;
+}
+ul.nav-right>li>a {}
+/*二级*/
+.nav-right-sub {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,0.5);
+	border-top: none;
+	display: none;
+}
+.nav-right-sub>li {
+	width: 120px;
+}
+.nav-right-sub>li>a {
+	font-size: 12px;
+	color: #999;
+	padding: 0 10px;
+	line-height: 30px;
+}
+
+
+/*右边鼠标滑过部分*/
+ul.nav-right>li>a:hover {
+	color: #fff;
+}
+ul.nav-right>li:hover>ul.nav-right-sub {
+	display: block;
+}
+/*header部分*/
+.header {
+	height: 100px;
+	margin-top: 40px;
+	position: relative;
+}
+.m-searchiptbox {
+	position: absolute;
+	top: 10px;
+	left: 343px;
+}
+.topsearch {
+	width: 510px;
+	height: 40px;
+	background-color: #ff2337;
+	padding-left: 1px;
+	border-radius: 40px;
+}
+.topsearch>.wrap {
+	float: left;
+	background-color: #fff;
+	margin: 2px 1px;
+	padding: 6px 39px 5px 30px;
+	border-radius: 40px;
+}
+.topsearch>.wrap>input {
+	width: 410px;
+    height: 24px;
+    line-height: 24px;
+    border: 0;
+    font-size: 13px;
+	outline: none;
+}
+.topsearch>.topsearchbox {
+	width: 60px;
+	height: 40px;
+	background-color: #ff2337;
+	border-radius: 40px;
+	position: absolute;
+	top: 0;
+	right:0;
+}
+.topsearch>.topsearchbox>.topSearchBtn {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	width: 50px;
+	font-size: 19px;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+.topsearch>.icon-sousuo {
+	/* display: inline-block; */
+	position: absolute;
+	left: 10px;
+    top: 10px;
+	font-size: 20px;
+	color: #eee;
+}
+.header>.shopcart {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 76px;
+	width: 106px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #fff;
+	border: 2px solid #ff1e32;
+	border-radius: 36px;
+}
+.header>.shopcart>.icon-cart1 {
+	display: inline-block;
+	width: 20px;
+	font-size: 20px;
+	color: #ff1e32;
+	margin-right: 5px;
+	
+}
+.header>.shopcart>span {
+	color: #333;
+	font-size: 14px;
+}
+.header>.shopcart:hover {
+	background-color: #ea9898;
+}
+/*top部分*/
+.top {}
+.topTab {
+	position: relative;
+	z-index: 102;
+	line-height: 45px;
+}
+.topCats {
+	float: left;
+	width: 164px;
+	height: 40px;
+	background-color: red;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	padding-left: 0;
+}
+/* 一级菜单 */
+.topCats>ul.catitmlst {
+	position: absolute;
+	width: 164px;
+	top: 100%;
+	left: 0;
+}
+.topCats>ul.catitmlst>li {
+	background-color: red;
+    padding-left: 10px;
+	cursor: pointer;
+    text-align: left;
+    padding-right: 3px;
+	height: 45px;
+	line-height: 45x;
+	text-align: center;
+	
+}
+.topCats>ul.catitmlst>li>a {
+	color: #fff;
+	font-size: 14px;
+	margin: 0 20px;	
+}
+.topCats>ul.catitmlst>li:hover {
+	background-color: #fff;
+	color: red;
+}
+.topCats>ul.catitmlst>li:hover>a {
+	color: red;
+}
+
+.topCats>ul.catitmlst>li>.icon-you {
+	font-size: 15px;
+	color: #ff96ad;
+}
+/* 二级菜单 */
+.catitmlst-sub {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	background-color: #fff;
+	border: 1px solid red;
+	border-left: none;
+	display: none;
+}
+.catitmlst-sub-left {
+	margin: 0 20px 20px 15px;
+    width: 658px;
+    max-height: 440px;
+    overflow: hidden;
+}
+.sub-top {}
+.litd {
+	float: left;
+    width: 50%;
+    vertical-align: top;
+    position: relative;
+}
+.underline {
+	height: 1px;
+    width: 642px;
+    background: #eaeaea;
+    position: absolute;
+    top: 34px;
+}
+.item {
+	display: inline-block;
+    padding: 0;
+    margin: 0 25px 17px 5px;
+    vertical-align: top;
+    width: 275px;
+    height: auto;
+    line-height: normal;
+    overflow: hidden;
+}
+.item>p.title {
+	height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    font-weight: 700;
+	text-align: left;
+}
+.item>p.title>a {
+	display: inline;
+    color: #333;
+
+}
+.namebox {
+	margin-left: -8px;
+    font-size: 0;
+	text-align: left;
+}
+.namebox>a {
+	display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 13px;
+	color: #666;
+}
+.namebox>a.color {
+	color: #ff1e32;
+}
+.catitmlst-sub-right {}
+.sub-right {}
+.sub-right>a {}
+.sub-right>a>img {}
+
+.catitmlst-sub-bootom {}
+.topCats>ul.catitmlst>li:hover>.catitmlst-sub {
+	display: block;
+}
+/*------------------*/
+.toplevel {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+.lineicon {
+	display: inline-block;
+	width: 15px;
+	height: 12px;
+	margin: 0 24px 0 15px;
+	overflow: hidden;
+}
+.lineicon>i {
+	width: 15px;
+	border-top: 2px solid #ddd;
+	display: block;
+	margin-bottom: 2px;
+	border-bottom: 1px solid #ff5160;
+}
+.toplevel>span {}
+.topTab>ul {
+	float: left;
+	padding-left: 25px;
+}
+.topTab>ul>li {
+	float: left;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+}
+.topTab>ul>li:nth-child(1)>a {
+	color: #ff1e32;
+}
+.topTab>ul>li>a {
+	font-size: 15px;
+	color: #000;
+	font-weight: 700;
+}
+.topTab>ul>li>a:hover {
+	color: #ff1e32;
+}

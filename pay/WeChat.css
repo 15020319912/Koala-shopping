@@ -1,0 +1,164 @@
+body { background-color: #F3F3F3;
+	
+}
+/* 订单号 */
+.orderID {}
+.orderID>p.orderid {
+	padding: 5px;
+	padding-top: 20px;
+}
+.orderID>p.orderid>span {}
+.orderID>p.orderid>span:nth-child(1) {
+	font-size: 16px;
+	font-weight: bold;
+}
+.orderID>p.orderid>span:nth-child(3) {
+	float: right;
+	font-weight: bold;
+	color: #E31436;
+	font-size: 20px;
+}
+.orderID>p.timing {
+	padding: 5px;
+	padding-bottom: 30px;
+}
+.orderID>p.timing>span>span {
+	color: #E53046;
+}
+.timing>span>a {
+	float: right;
+	font-size: 14px;
+}
+/* 微信二维码 */
+.wechat-code {
+	background-color: white;
+	position: relative;
+	padding-bottom: 60px;
+}
+.wechat-code>.xian {
+	height: 260px;
+	width: 2px;
+	background-color: lightgray; 
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.wechat-code>.wechat-code-lt,
+.wechat-code>.wechat-code-rt {
+	width: 50%;
+	float: left;
+}
+.wechat-code-lt {
+	width: 100%;
+	text-align: center;
+}
+.wechat-code-lt>p {
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+.wechat-code-lt>.wechat-code-QR {}
+.wechat-code-lt>.wechat-code-QR>a {
+	display: block;
+	padding: 5px;
+}
+.wechat-code-lt>.wechat-code-QR>a>img {
+	width: 30%;
+	border: 1px solid lightgray;
+	padding: 5px;
+}
+.wechat-code-lt>i {
+	font-size: 30px;
+	color: #D22147;
+}
+.wechat-code-lt>.wechat-code-text {
+	text-align: left;
+	margin-left: 5px;
+	display: inline-block;
+	font-size: 13px;
+}
+
+.wechat-code-rt {
+	text-align: center;
+}
+.wechat-code-rt>img {
+	margin-top: 55px;
+	width: 40%;
+}
+.select-pay {
+	padding: 20px 0;
+}
+.select-pay>a {
+	color: red;
+}
+
+
+
+/* 购买成功 */
+.buysuccess-wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	/* 隐藏 */
+}
+.form-wrapper {
+	margin-top: 20px;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 100px 130px;
+	text-align: center;
+}
+.form-wrapper>i {
+	font-size: 55px;
+	color: #7CFC00;
+	vertical-align: middle;
+}
+.form-wrapper>.success-text {
+	display: inline-block;
+	font-size: 25px;
+	text-align: left;
+	margin-left: 20px;
+}
+.form-wrapper>div input {
+	border: none;
+	outline: none;
+	padding: 10px 40px;
+	background-color: red;
+	color: white;
+	margin-top: 50px;
+	margin-right: 20px;
+	font-size: 15px;
+}
+/* 页脚 */
+.alipay-foot-adress {
+	text-align: center;
+	color: gray;
+	margin-top: 20px;
+}
+.alipay-foot-img {
+	text-align: center;
+}
+
+
+
+/* 过期显示 */
+.order-overdue {
+	height: 102px;
+	text-align: center;
+	line-height: 102px;
+	font-size: 25px;
+	font-weight: bold;
+	display: none;
+}
+.order-overdue>a {
+	color: #E53350;
+}
+

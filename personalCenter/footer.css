@@ -1,0 +1,113 @@
+/* 页脚 */
+.footBgWrap {	
+}
+/*btmlist部分*/
+.btmlist {
+	padding: 49px 0;
+	border-bottom: 1px solid #eaeaea;
+}
+.btmlist>ul {}
+.btmlist>ul>li {
+	float: left;
+	width: 233px;
+	margin-left: 42px;
+	}
+.btmlist>ul>li>.btmIcon {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	font-size: 20px;
+	font-weight: 700;
+	border: 2px solid #d6d6d6;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 44px;
+	float: left;
+	margin-right: 12px;
+}
+.btmlist>ul>li>.tit {
+	font-size: 18px;
+}
+.btmlist>ul>li>.desc {
+	font-size: 12px;
+}
+/*box部分*/
+.guideList {
+}
+.guideList>ul {
+	padding: 40px 0 90px;
+}
+.guideList>ul>li {
+	float: left;
+	padding: 0 0 0 21px;
+	height: 128px;
+}
+.guideList>ul>li>h3 {
+	font-size: 18px;
+	font-weight: 400;
+}
+.guideList>ul>li>p {
+	line-height: 29px;
+	font-size: 12px;
+	text-align: center;
+}
+.guideList>ul>li>p>a {
+	color: #333;
+	
+}
+.guideList>ul>li>p>a:hover{
+	text-decoration: underline;
+}
+.guideList>ul>li>img {
+	width: 108px;
+	height: 108px;
+	float: right;
+}
+/*logo部分和字体图标*/
+.guideList>ul>li.first {
+	width: 258px;
+}
+.focuson {}
+.focuson>.label {
+	font-size: 12px;
+	color: #333333;
+	padding-right: 15px;
+}
+.focuson>a>i.icon-weixin2 {
+	font-size: 32px;
+	color:darkgreen;
+}
+.focuson>a>i.icon-weibo {
+	font-size: 32px;
+	color: red;
+	padding-right: 10px;
+}
+/*aboutNEST部分*/
+.aboutNEST {
+	position: relative;
+    padding: 20px 0;
+    background: #333;
+    line-height: 26px;
+    text-align: center;
+	color: #c2c2c2;
+}
+.aboutNEST-xx {
+	padding: 3px 0;
+}
+.aboutNEST-xx>a,.aboutNEST-xx>span.m-license {
+	color: #c2c2c2;
+	font-size: 12px;
+	padding-right: 5px;
+}
+.f-tac>a.KXYZ>img {
+	width: 80px;
+	padding-right: 10px;
+	border-radius: 5px;
+	margin-top: 5px;  
+}
+.f-tac>a.u-shield>img {
+	width: 27.84px;
+}
+.aboutNEST-xx>a:hover {
+	text-decoration: underline;
+}

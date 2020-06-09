@@ -1,0 +1,204 @@
+.w {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	height: 600px;
+}
+
+.left {
+	width: 400px;
+	float: left;
+	margin-top: 180px;
+}
+
+.right {
+	margin-top: 100px;
+	width: 400px;
+	float: right;
+	position: relative;
+}
+
+.right-titles {
+	border: 1px solid #ddd;
+	font-size: 0;
+	position: relative;
+}
+
+.right-titles>li.phone,.right-titles>li.mail {
+	width: 50%;
+	height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+    cursor: pointer;
+	color: red;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+}
+
+.right-contents {
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 0 40px;
+}
+
+ul.right-contents>li {
+	display: none;
+}
+ul.right-contents>li:nth-child(1) {
+	display: block;
+}
+
+
+
+
+.suo {
+	float: right;
+	font-size: 12px;
+	color: #666;
+	margin: 3px 0;
+}
+
+.phone-name,.phone-pass {
+	width: 320px;
+	height: 36px;
+	font-size: 14px;
+	text-indent: 35px;
+	
+}
+.icon-phone {
+	position: absolute;
+	top: 89px;
+	left: 45px;
+}
+.icon-phone>i {
+	font-size: 24px;
+	color: #ddd;
+}
+.phone-pass {
+	text-indent: 5px;
+	margin: 15px 0;
+}
+.yzm {
+	position: absolute;
+	top: 134.7px;
+	right: 35.5px;
+	width: 100px;
+	height: 38.5px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #DDDDDD;
+}
+
+.phone-login {
+	width: 324px;
+	background-color: #e31436;
+    background-image: none;
+    border: 0;
+	color: #fff;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+	margin-bottom: 50px;
+}
+.clause {
+	font-size: 12px;
+    color: #999;
+	margin: 10px 0;
+}
+
+.youjian {
+	position: absolute;
+	top: 85px;
+	left: 45px;
+	
+}
+.youjian>i,.mail-suo {
+	font-size: 24px;
+	color: #ddd;
+}
+.mail-suo {
+	position: absolute;
+	top: 135px;
+	left: 45px;
+	
+}
+.mail-suo>i {
+	font-size: 24px;
+	color: #ddd;
+}
+
+.mail-name,.mail-pass {
+	width: 320px;
+	height: 36px;
+	font-size: 14px;
+	text-indent: 35px;
+	
+}
+.mail-name {
+	margin-top: 25px;
+}
+.mail-pass {
+	margin-top: 15px;
+}
+
+.mail-login {
+	width: 324px;
+	background-color: #e31436;
+	border: 0;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+
+.forget {
+	margin-left: 260px;
+	margin-bottom: 20px;
+	height: 12px;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.font {
+	font-size: 24px;
+	padding-top: 10px;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	background-color: #f8f8f8;
+}
+.tb>i {
+	font-size: 31px;
+	color: orangered;
+	vertical-align: middle;
+	padding-left: 40px;
+}
+.zfb>i {
+	font-size: 26px;
+	color: deepskyblue;
+	vertical-align: middle;
+}
+.wx>i {
+	font-size: 26px;
+	color: green;
+	vertical-align: middle;
+}
+.wb>i {
+	font-size: 30px;
+	color: goldenrod;
+	vertical-align: middle;
+}
+.qq>i {
+	font-size: 26px;
+	color: cornflowerblue;
+	vertical-align: middle;
+}
+

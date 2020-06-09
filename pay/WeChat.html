@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./WeChat.css">
+		<link rel="stylesheet" type="text/css" href="../public/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../fonts/iconfont.css"/>
+		<link rel="stylesheet" href="../top/top.css">
+		<title>微信支付</title>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<div class="tonglan nav">
+			<div class="w clearfix">
+				<ul class="nav-left">
+					<li>考拉欢迎你!</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li>
+						<a href="#">手机考拉</a>
+						<a href="#" class="nav-left-sub"><img src="../images/guideList/guideList01.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#">每日签到</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li>
+						<a href="#">个人中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的红包</a></li>
+							<li><a href="#">我的考拉豆</a></li>
+							<li><a href="#">账号管理</a></li>
+							<li><a href="#">我的实名认证</a></li>
+							<li><a href="#">我的发票抬头</a></li>
+							<li><a href="#">我收藏的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">售后管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">客服服务</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">联系客服</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">知识产权保护</a></li>
+							<li><a href="#">规则中心</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">充值中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">话费充值</a></li>
+							<li><a href="#">游戏充值</a></li>
+							<li><a href="#">AppStore充值卡</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">消费者权益</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">消费者告知书</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">更多</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">收藏本站</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">微信公众号</a></li>
+							<li><a href="#">招商合作</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		
+		<!-- 订单号 -->
+		<div class="orderID w">
+			<p class="orderid">
+				<span>请您及时付款，以便小考拉为您尽快处理哦！</span>
+				<span>订单号：<u class="order-id">11111</u></span>
+				<span>￥<span class="account">00</span></span>
+			</p>
+			<p class="timing">
+				<span>
+					请您在提交订单后
+					<span>
+						<span class="minute">00</span>
+						分
+						<span class="second">00</span>
+						秒内
+					</span>	
+					完成支付，否则订单会自动取消。考拉海购为您服务。	
+				</span>
+				<span>
+					<a href="">
+						订单详情
+						<i class="iconfont icon-xia"></i>
+					</a>
+				</span>
+			</p>
+		</div>
+		<!-- 订单失效弹出 -->
+		<div class="order-overdue w">
+			<a href="cart.html">订单已失效！请重新购买 ></a>
+		</div>
+		<!-- 微信二维码 -->
+		<div class="wechat-code w clearfix">
+			<div class="xian"></div>
+			<div class="wechat-code-lt">
+				<p>微信支付</p>
+				<div class="wechat-code-QR">
+					<a href="#" class="shows">
+						<img src="../images/pay/pay-Alipay002.png" >
+					</a>
+				</div>	
+				<i class="iconfont icon-saoyisao"></i>
+				<div class="wechat-code-text">
+					<p>请使用微信扫一扫</p>
+					<p>扫描二维码支付</p>
+				</div>
+			</div>
+			<div class="wechat-code-rt">
+				<img src="../images/pay/pay-WeChat001.jpg" alt="">
+			</div>
+		</div>
+		<!-- <div class="select-pay w"> 
+			<a href="#">
+				<i class="iconfont icon-zuo"></i> 
+				选择其他支付方式
+			</a>
+		</div> -->
+		
+		
+		
+		 <!-- 购买成功 -->
+		<div class="buysuccess-wrapper">
+				<div class='form-wrapper'>
+					<i class="iconfont icon-success"></i>
+					<div class="success-text">	
+						<p>购买成功！！</p>
+					</div>
+					<div>
+						<a href="#"><input type="button" value='查看订单 >' class='ok' /></a>
+					</div>
+				</div>
+		</div>
+		<br />
+		<div class="alipay-foot-adress w">
+			ICP证：沪B2-20150087
+		</div>
+		<br />
+		<div class="alipay-foot-img w">
+			<img src="../images/pay/footer.png" alt="">
+		</div>
+		<br />
+		<script src="../public/js-cookie.js"></script>
+		<script src="./WeChat.js"></script>
+	</body>
+</html>

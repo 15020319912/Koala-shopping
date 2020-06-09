@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../public/reset.css">
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="confirm.css" />
+		<link rel="stylesheet" href="regions-picker.css" />
+		<link rel="stylesheet" href="../top/top.css">
+		<link rel="stylesheet" href="../footer/footer.css">
+		<title>确认订单</title>
+	</head>
+	<body>
+		<div class="tonglan nav">
+			<div class="w clearfix">
+				<ul class="nav-left">
+					<li>考拉欢迎你!</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li>
+						<a href="#">手机考拉</a>
+						<a href="#" class="nav-left-sub"><img src="../images/guideList/guideList01.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#">每日签到</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li>
+						<a href="#">个人中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的红包</a></li>
+							<li><a href="#">我的考拉豆</a></li>
+							<li><a href="#">账号管理</a></li>
+							<li><a href="#">我的实名认证</a></li>
+							<li><a href="#">我的发票抬头</a></li>
+							<li><a href="#">我收藏的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">售后管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">客服服务</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">联系客服</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">知识产权保护</a></li>
+							<li><a href="#">规则中心</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">充值中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">话费充值</a></li>
+							<li><a href="#">游戏充值</a></li>
+							<li><a href="#">AppStore充值卡</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">消费者权益</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">消费者告知书</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">更多</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">收藏本站</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">微信公众号</a></li>
+							<li><a href="#">招商合作</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<!-- header部分 -->
+		<div class="header w">
+			<a href="#"><img src="../images/logo.png" alt="" /></a>
+		</div>
+		
+		<!-- 地址 -->
+		<div class="order-selectadress w">
+			<h4>选择收货地址</h4>
+			<div class="hr"></div>
+			<!-- 已有地址 -->
+			<form class="have-adress">
+				<table class='address-list'>
+					<thead>
+						<tr>
+							<th>收货人</th>
+							<th>收货地址</th>
+							<th>收货详情</th>
+							<th>手机号码</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<!-- <div class="useradress">
+					<ul></ul>
+				</div> -->
+				<div class="add-adress">
+					<input type="button" value="+ 新增收货地址" class="btn-add-adress">
+				</div>
+				
+				<!-- 弹出输入新地址 -->
+				<div class="adress-eject">
+					<div class="newadd-adress">
+						<div class="item-wrapper1">
+							<div class="text">
+								<lable for='adress'><span>*</span>所在地区</lable>
+							</div>
+							<div class="cart-adress">
+								<input type="text" placeholder="北京市/西城区/展览路街" class="ad" />
+								<i class="iconfont icon-xia"></i>
+							</div>
+						</div>
+						<div class="item-wrapper2">
+							<div class="text">
+								<lable for="details"><span>*</span>详情地址</lable>
+							</div>	
+							<div class="adress-wrapper">
+								<textarea placeholder="无需重复填写省市区，小于75个字" id="details" class="details-adress" /></textarea>
+							</div>	
+						</div>	
+						
+						<div class="item-wrapper3">
+							<div class="text">
+								<lable for="name"><span>*</span>收货人姓名</lable>
+							</div>
+							<div class="name-wrapper">
+								<input type="text" placeholder="不能为昵称、X先生、X小姐等，请使用真实姓名" id="name" class="write-name" >
+							</div>	
+						</div>	
+						
+						<div class="item-wrapper4">
+							<div class="text">
+								<lable for="pho"><span>*</span>手机号码</lable>
+							</div>
+							<div class="pho-wrapper">
+								<input type="text" placeholder="手机号码、电话号码必须填一项" id="pho" class="pho" >
+							</div>	
+						</div>	
+						
+						<div class="item-wrapper5">
+							<div class="text">
+								<lable for="tel">电话号码</lable>
+							</div>
+							<div class="tel-wrapper">
+								<input type="text" placeholder="区号" id="tel" > -
+								<input type="text" placeholder="电话号码" id="tel" > -
+								<input type="text" placeholder="分机号（可选）" id="tel" >
+							</div>	
+						</div>	
+						
+						<div class="item-wrapper6">
+							<div class="text">
+								<lable for="e-mail">邮箱</lable>
+							</div>
+							<div class="e-mail-wrapper">
+								<input type="text" placeholder="接受订单提醒邮件，便于您及时了解订单状态" id="e-mail" >
+							</div>	
+						</div>
+						<div class="item-wrapper7">
+							<div class="text"></div>
+							<div class="input-wrapper">
+								<input type="button" value="保存新地址" class="save-adress" />
+								<input type="button" value="取消" class="adress-cancel" />
+							</div>	
+						</div>
+					</div>
+				</div>	
+			</form>
+		</div>
+		
+		<!-- 确认订单 -->
+		<div class="order-ok w">
+			<h4>确认商品信息</h4>
+			<div class="hr"></div>
+		</div>
+		<div class="order-message w">
+			<table>
+				<thead>
+					<tr>
+						<th>商品信息</th>
+						<th></th>
+						<th>重量（千克）</th>
+						<th>单价（元）</th>
+						<th>数量</th>
+						<th>金额（元）</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+			<div class="leave-word">
+				<span>给商家留言：</span>
+				<div>
+					<textarea placeholder="选填最多100个字"></textarea>
+				</div>
+				<span>0/200</span>
+			</div>
+		</div>
+		<!-- 优惠券 -->
+		<div class="coupon-wrapper w clearfix">
+			<div class="coupon">
+				<label>商品券(0)</label>
+				<select disabled>
+					<option value ="1">暂无可用优惠券</option>
+				</select>
+			</div>
+			<div class="coupon">
+				<label>优惠券(0)</label>
+				<select disabled>
+					<option value ="1">暂无可用优惠券</option>
+				</select>
+			</div>
+			<div class="coupon">
+				<label>税费券(0)</label>
+				<select disabled>
+					<option value ="1">暂无可用优惠券</option>
+				</select>
+			</div>
+		</div>
+		<!-- 发票  提交订单 -->
+		<div class="matters-wrapper w">
+			<div class="redpacket clearfix">
+				<p>
+					<span>
+						<input type="checkbox">
+						红包
+					</span>
+					<span>暂无可用</span>
+				</p>
+			</div>
+			<div class="invoice clearfix">
+				<div class="invoice-lt">
+					<p>发票信息：订单中所有商品均不支持开具发票</p>
+					<div class="content">
+						<p>发票须知：</p>
+						<p>1. 保税仓发货商品与海外仓发货商品属跨境海外商品，无法开具国内增值税发票</p>
+						<p>2. 自2017年7月1日起，发票抬头选择公司（企业、有税号的非企业性单位和个体工商户）需提供纳税人识别号</p>
+						<p>3. 自营国内仓商品支持开具电子普通发票，电子普通发票在确认收货后48小时内开具</p>
+						<p>4. 杭州1号仓和杭州4号仓的商品，若下单开具纸质普通发票，发票随包裹一起寄出，补开则单独寄出</p>
+						<p>5. 其他自营国内仓商品，若开具纸质普通发票，发票在确认收货后3个工作日内单独寄出</p>
+						<p>6. 第三方商家若无法开具电子发票，则自动开纸质发票，商家发票以实际收到为准</p>
+						<p>7. 如需增值税专用发票，请在下单时填写增值税专用发票信息，核对无误后提交，发票在确认收货后3个工作日内单独寄出</p>
+						<p>8. 礼品卡支付金额不支持开发票</p>
+						<p><a href="#">发票相关问题 ></a></p>
+					</div>
+				</div>
+				<div class="invoice-rt">
+					<div class="invoice-rt-tp clearfix">
+						<div class="coupon-name">
+							<p>商品应付总计：</p>
+							<p>运费：</p>
+							<p>税费：</p>
+							<p>应付金额：</p>
+						</div>
+						<div class="coupon-count">
+							<p>¥<span class="all-count1">0</span>.00</p>
+							<p>¥0.00</p>
+							<p>¥0.00</p>
+							<p>¥<span class="all-count2">0</span>.00</p>
+						</div>
+					</div>
+					<div class="invoice-rt-bt">
+						<span><a href="../cart/cart.html">返回购物车修改</a></span>
+						<span>
+							<a href="#"><input type="button" value="提交订单" class="submit-order"></a>
+						</span>
+						<p>
+							收货信息： <span class="useradress-data"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="matters-read-wrapper">
+				<div class="matters-read">
+					<input type="checkbox">
+					<span>
+						本人同意并接受 
+						<span class="kao">
+							《考拉海购服务协议》
+						</span>
+							、 
+						<span class="me">《进口个人申报委托》</span>
+						和 
+						<a href="#">《消费者告知书》</a>
+					  
+						<div class="kao-ch">营国内仓商品支持开具电子普通发票，
+								电子普通发票在确认收货后48小时内开具. 杭州1号仓和杭州4号仓的商品，
+								若下单开具纸质普通发票，发票随包裹一起寄出，补开则单独寄出
+						</div>
+					  <div class="me-ch">其他自营国内仓商品，若开具纸质普通发票，发票在确认收货后3个工作日内单独寄出</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="di tonglan"></div>
+		<!-- 页脚部分 -->
+		<div class="footBgWrap">
+			<div class="btmlist w">
+				<ul class="clearfix">
+					<li>
+						<div class="btmIcon">正</div>
+						<h3 class="tit">正品承诺</h3>
+						<p class="desc">正品保障 假一赔十</p>
+					</li>
+					<li>
+						<div class="btmIcon">低</div>
+						<h3 class="tit">低价保证</h3>
+						<p class="desc">缩减中间环节 确保低价</p>
+					</li>
+					<li>
+						<div class="btmIcon">退</div>
+						<h3 class="tit">30天无忧退货</h3>
+						<p class="desc">国内退货 售后无忧</p>
+					</li>
+					<li>
+						<div class="btmIcon">邮</div>
+						<h3 class="tit">满88包邮</h3>
+						<p class="desc">部分特殊商品除外</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="guideList w">
+			<ul class="clearfix">
+				<li class="first">
+					<a href="#"><img src="../images/logo.png" alt="" /></a>
+					<div class="focuson">
+						<span class="label">关注我们</span>
+						<a href="#">
+							<i class="iconfont icon-weibo">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+						<a href="#">
+							<i class="iconfont icon-weixin2">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+					</div>
+				</li>
+				<li>
+					<h3>考拉保障</h3>
+					<p><a href="#">假一赔十</a></p>
+					<p><a href="#">廉正举报</a></p>
+				</li>
+				<li>
+					<h3>新手指南</h3>
+					<p><a href="#">购物流程</a></p>
+					<p><a href="#">支付方式</a></p>
+					<p><a href="#">通关税费</a></p>
+					<p><a href="#">常见问题</a></p>
+				</li>
+				<li>
+					<h3>售后服务</h3>
+					<p><a href="#">售后政策</a></p>
+					<p><a href="#">退货流程</a></p>
+					<p><a href="#">特色服务</a></p>
+					<p><a href="#">联系客服</a></p>
+				</li>
+				<li>
+					<h3>物流配送</h3>
+					<p><a href="#">配送方式</a></p>
+					<p><a href="#">配送服务</a></p>
+					<p><a href="#">运费标准</a></p>
+					<p><a href="#">物流跟踪</a></p>
+				</li>
+				<li>
+					<h3>商家服务</h3>
+					<p><a href="#">招商合作</a></p>
+					<p><a href="#">销售联盟</a></p>
+					<p><a href="#">商家成长</a></p>
+				</li>
+				<li>
+					<h3>关于我们</h3>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">CEO邮箱</a></p>
+					<p><a href="#">线下店</a></p>
+				</li>
+				<li>
+					<img src="../images/guideList/guideList01.png" alt="" />
+					<p>扫描下载手机版</p>
+				</li>
+				<li>
+				<img src="../images/guideList/guideList02.jpg" alt="" />
+				<p>扫描下载手机版</p>
+				</li>
+			</ul>
+		</div>
+		<div class="aboutNEST">
+			<div class="aboutNEST-xx">
+				<a href="#">隐私政策</a>
+				<span class="m-license">-</span>
+				<a href="#">考拉海购</a>
+			</div>
+			<div class="aboutNEST-xx">
+				<span class="m-license">增值电信业务经营许可证：浙B2-20160288</span>
+				<a href="#">自营经营者信息 </a>
+				<span class="m-license">（浙）网械平台备字[2018]第00007号</span>
+			</div>
+			<div class="aboutNEST-xx">
+				<a href="#"><img src="../images/aboutNEST/aboutNEST001.png" /></a>
+				<a href="#">浙公网安备 33010802002216号 </a>
+				<span class="m-license">阿里巴巴版权所有©2003-2020</span>
+				<a href="#">互联网药品信息服务资格证书编号</a>
+				<a href="#">浙ICP备16011229号</a>
+			</div>
+			<div class="f-tac">
+				<a href="#" class="KXYZ"><img src="../images/aboutNEST/aboutNEST.png" alt="" /></a>
+				<a href="#" class="u-shield"><img src="../images/aboutNEST/aboutNEST003.png" alt="" /></a>
+			</div>
+			
+		</div>
+		
+		
+		<script src="../public/jQuery-3.4.0.js"></script>
+		<script src="../public/regions.js"></script>
+		<script src="../public/regions-picker.js"></script>
+		<script src="../data/order.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../data/product.js"></script>
+		<script src="../public/js-cookie.js"></script>
+		<script src="./confirm.js"></script>
+	</body>
+</html>

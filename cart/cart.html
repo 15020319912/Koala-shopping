@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../public/reset.css"/>
+		<link rel="stylesheet" href="../fonts/iconfont.css">
+		<link rel="stylesheet" href="cart.css"/>
+		<link rel="stylesheet" href="regions-picker.css">
+		<link rel="stylesheet" href="../top/top.css">
+		<link rel="stylesheet" href="../footer/footer.css">
+		<title>购物车</title>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<div class="tonglan nav">
+			<div class="w clearfix">
+				<ul class="nav-left">
+					<li>考拉欢迎你!</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li>
+						<a href="#">手机考拉</a>
+						<a href="#" class="nav-left-sub"><img src="../images/guideList/guideList01.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#">每日签到</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li>
+						<a href="#">个人中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的红包</a></li>
+							<li><a href="#">我的考拉豆</a></li>
+							<li><a href="#">账号管理</a></li>
+							<li><a href="#">我的实名认证</a></li>
+							<li><a href="#">我的发票抬头</a></li>
+							<li><a href="#">我收藏的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">售后管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">客服服务</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">联系客服</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">知识产权保护</a></li>
+							<li><a href="#">规则中心</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">充值中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">话费充值</a></li>
+							<li><a href="#">游戏充值</a></li>
+							<li><a href="#">AppStore充值卡</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">消费者权益</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">消费者告知书</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">更多</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">收藏本站</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">微信公众号</a></li>
+							<li><a href="#">招商合作</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<!-- header部分 -->
+		<div class="header w">
+			<a href="#"><img src="../images/logo.png" alt="" /></a>
+		</div>
+		<!-- 购物车显示 -->
+		<div class="cart w">
+			<!-- 用户未登录	 -->
+			<div class="cart-unlogin">
+				<ul class="cart-login">
+					<li><img src="../images/cart/cart-car.jpg" alt="" /></li>
+					<li>
+						<p>购物车里空空如也，赶紧去 <a href="../index.html">逛逛吧></a></p>
+						<p>或者您可以先进行 <a href="#" class="gologin">登录></a></p>
+					</li>
+				</ul>
+					
+			</div>
+		<!-- 用户登录未选商品 -->
+			<div class="cart-empty">
+				<p>
+					<img src="../images/cart/cart-car.jpg" alt="" />
+					<span>购物车里空空如也，赶紧去 <a href="../index.html">逛逛吧></a></span>
+				</p>
+			</div>
+		</div>
+		<!-- 用户登录且选择了商品 -->
+		
+		<div class="cart-entity w">
+			<div class="cart-title-wrapper">
+				<span class="cart-title-my">我的购物车<span class="allCounts"> 0 </span></span>
+				<span class="cart-title-adress">
+					<i class="iconfont icon-AK-MNshengyin_fill"></i>
+					<span>考拉自营商品已免运费</span>
+					<i class="iconfont icon-wenhao"></i>
+					<a href="../home/index.html">再逛逛 > </a>
+					<label for="adress">配送至 : </label>
+					<div class="cart-adress-wrapper">
+						<input type="text" id="adress" placeholder="北京市/西城区/展览路街" class="ad">
+						<i class="iconfont icon-xia"></i>
+					</div>
+					
+				</span>
+			</div>
+			<div class="table">
+				<table>
+					<thead>
+						<tr>
+							<th>
+								<i class="checkbox all checked"></i>
+								<span>全选</span>
+							</th>
+							<th>商品信息</th>
+							<th></th>
+							<th>单价（元）</th>
+							<th>数量</th>
+							<th>金额（元）</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<!-- 小计 -->
+				<div class="cart-account">
+					<ul class="clearfix">
+						<li>活动优惠：-￥0</li>
+						<li>商品应付总计：<span>￥<span class="account">0</span></span></li>
+						<li>预计税费：￥0</li>
+					</ul>
+				</div>
+				<!-- 结算 -->
+				<div class="cart-buy-wrapper clearfix">
+					<div class="cart-buy-lt">
+						<!-- <i class="checkbox all checked"></i>
+						<span>全选</span>
+						<span class="delect-select">删除选中商品</span> -->
+					</div> 
+					<div class="cart-buy-rt clearfix">
+						<div class="cart-buy-int">
+							<ul>
+								<li class="graytext">活动优惠：-￥0</li>
+								<li>
+									<p>已选商品<span class="select-counts">0</span> 件</p>
+									<p class="graytext">商品应付总计：<span>￥<span class="account">0</span></span></p>
+								</li>
+								<li>
+									<p>总价（不含运费）：<span>￥<span class="all-account">0</span></span></p>
+									<p class="graytext">商品税费（不含运费税）：￥0</p>
+								</li>
+							</ul>
+						</div>
+						<div class="cart-gobuy">
+							<input type="button" value="去结算" class="btn-gobuy"/>
+						</div>
+						<!-- 提示用户未选择商品 -->
+						<div class="select-prompt">
+							<div>
+								<p>您还没有选择商品哦 ~ ~ 亲！！</p>
+								<p>
+									<input type="button" value="知道了" class="know">
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!-- 商品推荐 -->
+		<!-- 最佳搭配1 -->
+		<div class="recommend-floor1 w">
+			<h3>最佳搭配</h3>
+			<span>根据您的购物车商品推荐</span>
+			<span>
+				<p>
+					<input type="button" value="<" class="left" disabled />
+					<input type="text" value="1" class="page" checked />
+					<input type="text" value="/ 4" checked /> 
+					<input type="button" value=">" class="right" />
+				</p>
+			</span>
+			<ul class="recommend-img">
+				
+			</ul>
+		</div>
+		<!-- 猜你喜欢 -->
+		<!-- 喜欢1 -->
+		<div class="cart-likefloor1 w">
+			<h3>猜你喜欢</h3>
+			<span>根据你的浏览记录推荐的商品</span>
+			<div class="cart-likefloor1-img w">
+				<ul>
+				
+				</ul>
+			</div>
+		</div>
+		
+		<!-- 喜欢2 -->
+		<div class="cart-likefloor2 w">
+			<h3>大家都在买</h3>
+			<span>全网最热门的商品推荐</span>
+			<div class="cart-likefloor2-img w">
+				<ul>
+				
+				</ul>
+			</div>	
+		</div>
+		
+		<!-- 页脚部分 -->
+		<div class="footBgWrap">
+			<div class="btmlist w">
+				<ul class="clearfix">
+					<li>
+						<div class="btmIcon">正</div>
+						<h3 class="tit">正品承诺</h3>
+						<p class="desc">正品保障 假一赔十</p>
+					</li>
+					<li>
+						<div class="btmIcon">低</div>
+						<h3 class="tit">低价保证</h3>
+						<p class="desc">缩减中间环节 确保低价</p>
+					</li>
+					<li>
+						<div class="btmIcon">退</div>
+						<h3 class="tit">30天无忧退货</h3>
+						<p class="desc">国内退货 售后无忧</p>
+					</li>
+					<li>
+						<div class="btmIcon">邮</div>
+						<h3 class="tit">满88包邮</h3>
+						<p class="desc">部分特殊商品除外</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="guideList w">
+			<ul class="clearfix">
+				<li class="first">
+					<a href="#"><img src="../images/logo.png" alt="" /></a>
+					<div class="focuson">
+						<span class="label">关注我们</span>
+						<a href="#">
+							<i class="iconfont icon-weibo">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+						<a href="#">
+							<i class="iconfont icon-weixin2">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+					</div>
+				</li>
+				<li>
+					<h3>考拉保障</h3>
+					<p><a href="#">假一赔十</a></p>
+					<p><a href="#">廉正举报</a></p>
+				</li>
+				<li>
+					<h3>新手指南</h3>
+					<p><a href="#">购物流程</a></p>
+					<p><a href="#">支付方式</a></p>
+					<p><a href="#">通关税费</a></p>
+					<p><a href="#">常见问题</a></p>
+				</li>
+				<li>
+					<h3>售后服务</h3>
+					<p><a href="#">售后政策</a></p>
+					<p><a href="#">退货流程</a></p>
+					<p><a href="#">特色服务</a></p>
+					<p><a href="#">联系客服</a></p>
+				</li>
+				<li>
+					<h3>物流配送</h3>
+					<p><a href="#">配送方式</a></p>
+					<p><a href="#">配送服务</a></p>
+					<p><a href="#">运费标准</a></p>
+					<p><a href="#">物流跟踪</a></p>
+				</li>
+				<li>
+					<h3>商家服务</h3>
+					<p><a href="#">招商合作</a></p>
+					<p><a href="#">销售联盟</a></p>
+					<p><a href="#">商家成长</a></p>
+				</li>
+				<li>
+					<h3>关于我们</h3>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">CEO邮箱</a></p>
+					<p><a href="#">线下店</a></p>
+				</li>
+				<li>
+					<img src="../images/guideList/guideList01.png" alt="" />
+					<p>扫描下载手机版</p>
+				</li>
+				<li>
+				<img src="../images/guideList/guideList02.jpg" alt="" />
+				<p>扫描下载手机版</p>
+				</li>
+			</ul>
+		</div>
+		<div class="aboutNEST tonglan">
+			<div class="aboutNEST-xx">
+				<a href="#">隐私政策</a>
+				<span class="m-license">-</span>
+				<a href="#">考拉海购</a>
+			</div>
+			<div class="aboutNEST-xx">
+				<span class="m-license">增值电信业务经营许可证：浙B2-20160288</span>
+				<a href="#">自营经营者信息 </a>
+				<span class="m-license">（浙）网械平台备字[2018]第00007号</span>
+			</div>
+			<div class="aboutNEST-xx">
+				<a href="#"><img src="../images/aboutNEST/aboutNEST001.png" /></a>
+				<a href="#">浙公网安备 33010802002216号 </a>
+				<span class="m-license">阿里巴巴版权所有©2003-2020</span>
+				<a href="#">互联网药品信息服务资格证书编号</a>
+				<a href="#">浙ICP备16011229号</a>
+			</div>
+			<div class="f-tac">
+				<a href="#" class="KXYZ"><img src="../images/aboutNEST/aboutNEST.png" alt="" /></a>
+				<a href="#" class="u-shield"><img src="../images/aboutNEST/aboutNEST003.png" alt="" /></a>
+			</div>
+			
+		</div>
+		<!-- 返回顶部	 -->
+		<div class="cart-top">
+			<a href="#">
+				<i class="iconfont icon-shang"></i>
+				返回顶部
+			</a>
+		</div>
+		<script src="../public/jQuery-3.4.0.js"></script>
+		<script src="../public/regions.js"></script>
+		<script src="../public/regions-picker.js"></script>
+		
+		<script src="../data/product.js"></script>
+		<script src="../public/js-cookie.js"></script>
+		<script src="cart.js"></script>
+	</body>
+</html>

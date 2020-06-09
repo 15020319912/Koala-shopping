@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../public/reset.css" />
+		<link rel="stylesheet" type="text/css" href="personalCenter.css" />
+		<link rel="stylesheet" type="text/css" href="regions-picker.css"/>
+		<link rel="stylesheet" type="text/css" href="top.css"/>
+		<link rel="stylesheet" type="text/css" href="footer.css"/>
+		<title>个人中心</title>
+	</head>
+	<body>
+<!-- 页头begin -->
+<div class="tonglan nav">
+			<div class="w clearfix">
+				<ul class="nav-left">
+					<li>考拉欢迎你!</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">免费注册</a></li>
+					<li>
+						<a href="#">手机考拉</a>
+						<a href="#" class="nav-left-sub"><img src="../images/guideList/guideList01.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#">每日签到</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li>
+						<a href="#">个人中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的红包</a></li>
+							<li><a href="#">我的考拉豆</a></li>
+							<li><a href="#">账号管理</a></li>
+							<li><a href="#">我的实名认证</a></li>
+							<li><a href="#">我的发票抬头</a></li>
+							<li><a href="#">我收藏的商品</a></li>
+							<li><a href="#">我关注的商品</a></li>
+							<li><a href="#">售后管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">客服服务</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">联系客服</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">知识产权保护</a></li>
+							<li><a href="#">规则中心</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">充值中心</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">话费充值</a></li>
+							<li><a href="#">游戏充值</a></li>
+							<li><a href="#">AppStore充值卡</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">消费者权益</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">消费者告知书</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">更多</a>
+						<ul class="nav-right-sub">
+							<li><a href="#">收藏本站</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">微信公众号</a></li>
+							<li><a href="#">招商合作</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<!-- header部分 -->
+		<div class="header w">
+			<a href="#"><img src="../images/logo.png" alt="" /></a>
+			<div class="m-searchiptbox">
+				<div class="topsearch">
+					<div class="wrap">
+					<input type="text" placeholder="阿迪达斯" onfocus="this.placeholder=''" onblur="this.placeholder='阿迪达斯'">
+					</div>
+					<span class="topsearchbox">
+						<span class="topSearchBtn">
+							<img src="../images/header/header001.png" alt="" />
+						</span>
+					</span>
+					<span class="iconfont icon-sousuo"></span>
+				</div>
+				
+			</div>
+			<a href="#" class="shopcart">
+				<i class="iconfont icon-cart1"></i>
+				<span>购物车</span>
+			</a>
+		</div>
+		
+		<!-- top部分 -->
+		<div class="top w">
+			<div class="topTab clearfix">
+				<div class="topCats">
+					<div class="toplevel">
+						<div class="lineicon">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+						<span>所有分类</span>
+					</div>
+				</div>
+				<ul class="clearfix">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">国家馆</a></li>
+					<li><a href="#">全球逛</a></li>
+					<li><a href="#">工厂店</a></li>
+					<li><a href="#">品质奶粉</a></li>
+					<li><a href="#">人气面膜</a></li>
+					<li><a href="#">充值</a></li>
+				</ul>
+			</div>
+		</div>
+<!-- 页头end -->
+		<div class="w per-center-warpper clearfix">
+			<div class="per-center-left">
+				<h3>个人中心</h3>
+				<ul>
+					<li class="public active"><a href="#" class="active">我的订单</a></li>
+					<li><a href="#">我的优惠券</a></li>
+					<li><a href="#">我的红包</a></li>
+					<li><a href="#">我的考拉豆</a></li>
+					<hr>
+					<li><a href="#">帐号管理</a></li>
+					<li class="public"><a href="#">我的实名认证</a></li>
+					<li><a href="#">我的发票抬头</a></li>
+					<li class="public"><a href="#">我的收货地址</a></li>
+					<hr>
+					<li><a href="#"> 我收藏的商品</a></li>
+					<li><a href="#">我关注的品牌</a></li>
+					<hr>
+					<li><a href="#">售后管理</a></li>
+				</ul>
+			</div>
+			<div class="per-center-right">
+				<ul>
+					<!-- 我的订单 -->
+					<li class=" public active">
+						<div class="order-wrapper">
+							<div class="order-tab-wrapper">
+								<ul class="order-tab clearfix">
+									<li class="active">所有订单</li>
+									<li>待付款</li>
+									<li>待发货</li>
+									<li>待收货</li>
+									<li>待评价</li>
+								</ul>
+								<div class="rubbish">
+									<span></span>
+									<p>订单回收站</p>
+								</div>
+								<span></span>
+							</div>
+							<div class="order-tip">
+								<span></span>
+								<a href=" ">2020年2月29日前订单发货时间及交易流程调整公告</a>
+							</div>
+							<ul class="order-tab-son">
+								<li>
+									<div class="shopping-wrapper clearfix">
+										<div class="search-wrapper">
+											<input type="text" value="" placeholder="输入商品名称或订单号查询"/>
+											<div class="search">搜索</div>
+										</div>
+										<div class="shopping">
+										<div class="order-time-wrapper">
+											<span>下单时间：</span>
+											<ul class="order-time">
+												<li><a href="#">近三个月</a></li>
+												<li><a href="#">近六个月</a></li>
+												<li><a href="#">2020年</a></li>
+												<li><a href="#">2019年</a></li>
+												<li><a href="#">2018年</a></li>
+												<li><a href="#">2017年</a></li>
+												<li><a href="#">2016年</a></li>
+												<li><a href="#">2015年</a></li>
+											</ul>
+											
+										</div>
+										<div class="state-wrapper">
+											<span>订单状态：</span>
+											<ul class="state">
+												<li><a href="#">全部</a></li>
+												<li><a href="#">等待买家付款</a></li>
+												<li><a href="#">已发货</a></li>
+												<li><a href="#">未发货</a></li>
+												<li><a href="#">交易完成</a></li>
+												<li><a href="#">交易失败</a></li>
+												<li><a href="#">订单取消</a></li>
+											</ul>
+										</div>
+										</div>
+									</div>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</li>
+					<!-- 我的实名认证 -->
+					<li class="public">
+						<div class="id-wrapper ">
+							<h3>我的实名认证</h3>
+							<div class="id-tip-wrapper">
+								<span></span>
+								<p>根据海关规定，购买跨境商品需要办理清关手续，请您配合进行实名认证，以确保您购买的商品顺利通过海关检查。</p>
+								<ul class="id-tip">
+									<li>（考拉海购承诺所传身份证明只用于办理跨境商品的清关手续，不作他途使用，其他任何人均无法查看。）</li>
+									<li>实名认证的规则：</li>
+									<li>购买跨境商品需填写考拉账号注册人的真实姓名及身份证号码，部分商品下单时需提供收货人的实名信息（含身份证照片），具体请以下单时的提示为准。</li>
+								</ul>
+							</div>
+							<div class="id-input">
+								<label for="name">真实姓名</label><input id="name" type="text" placeholder="请填写您的真实姓名" />
+								<br />
+								<label for="id">身份证号</label><input id="id" type="text" placeholder="请填写姓名对应的身份证号" />
+								<br />
+								<label for="phone" class="phone">实名手机号</label><input id="phone" type="text" placeholder="请填写姓名对应的真实手机号" />
+								<br />
+
+								<div class="id-input-imgwrapper clearfix">
+									<span>上传照片</span>
+									<div class="id-input-img1-wrapper">
+										<ul class="id-input-img1 clearfix">
+											<li>+ 添加人像面</li>
+											<li>+ 添加非人像面</li>
+											<input type="file" class="file1">
+											<input type="file" class="file2">
+										</ul>
+									</div>
+									<ul class="id-input-img2 clearfix">
+										<li><span>示例</span><i></i></li>
+										<li><span>示例</span><i></i></li>
+									</ul>
+									<ul class="id-input-img3">
+										<li>注：</li>
+										<li>1. 需上传清晰的身份证正面、反面共2张照片</li>
+										<li>2. 照片不超过5MB，支持格式jpg，jpeg，png</li>
+									</ul>
+									<button type="button">认证</button>
+									<ul class="id-input-imgposition">
+										<li></li>
+										<li>上传照片太麻烦？</li>
+										<li>直接扫码app端认证吧！</li>
+									</ul>
+								</div>
+							</div>
+							<div class="id-proplem-wrapper">
+								<h3>常见问题</h3>
+								<p>1、为什么要进行实名认证？</p>
+								<p class="id-proplem">根据海关规定，购买跨境商品需进行实名认证，用于个人物品入境申报。
+									为确保您购买的商品能够顺利办理清关手续，请配合提供实名信息，否则将无法正常发货哦！</p>
+								<p>2、实名认证必须要上传身份证照片吗？</p>
+								<p class="id-proplem">
+									根据海关要求，部分跨境商品清关时需提供收货人实名信息对身份证影印件进行校验，具体请以下单时提示为准。
+									考拉会对您的个人信息做加密处理，不作他途使用，其他任何人均无法查看。</p>
+								<p>3、账户默认实名人是什么意思？</p>
+								<p class="id-proplem">除部分需进行收货人实名的商品外，购买其他跨境商品时考拉将自动提供您“账户默认实名人”的实名信息给到海关做入境申报。
+									海关将会将此笔订单的商品金额计入到该实名信息的个人年度交易26000元限额内。</p>
+								<p>4、海关26000元限额具体规则是什么？</p>
+								<p class="id-proplem">根据《关于跨境电子商务零售进口税收政策的通知》，跨境电子商务零售进口商品的单次交易限值为人民币5000元，个人年度交易限值为人民币26000元。
+									个人年度交易限额指您在全网各跨境平台购买的所有跨境商品在全年内累计金额不能超过26000元，超过限额海关有权进行退单处理。</p>
+							</div>
+						</div>
+					</li>
+					<!-- 我的地址管理 -->
+					<li class="public">
+						<div class="address-wrapper">
+							<h3>我的地址</h3>
+							<ul class="clearfix">
+								<li>已保存收货地址 <span>(共<i>0</i> 条)</span></li>
+								<li><a href="#address">+新增收货地址</a></li>
+							</ul>
+							<table>
+								<thead>
+									<tr>
+										<td>收货人</td>
+										<td>收货地址</td>
+										<td>联系电话</td>
+										<td>操作</td>
+										<td> </td>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+							<p>新增收货地址</p>
+							<div class="address-input" id="address">
+									
+								<form autocomplete="off" name="address">
+									<label for="place">所在地区</label>
+									<input type="text" id="place" name="place" class="address-place" placeholder="请选择省/市/区/街道"/><br/>
+									<label for="address">详细地址</label>
+									<input type="text" id="address" name="address" class="address-address" placeholder="无需重复书写省市区,小于75个字" /><br />
+									<label for="name1" class="address-label1">收货人姓名</label>
+									<input id="name1" type="text" name="nameone" class="address-input1" placeholder="不能为昵称,*小姐,*先生等,请使用真实姓名" /><br />
+									<label for="phone1">手机号码</label>
+									<input type="text" id="phone1" name="phone1" class="address-input1" placeholder="手机号码,电话号码必须选一项" /><br />
+									<label for="telephone">电话号码</label>
+									<input type="text" id="telephone" name="telephone" class="address-telephone" placeholder="区号" />-<input type="text"
+									 class="address-telephone" placeholder="电话号码" />-<input type="text" class="address-telephone" placeholder="分机号" /><br />
+									<label for="email" class="address-label2">邮箱</label>
+									<input id="email" type="text" name="email" class="address-input1" placeholder="接受订单提醒邮件,便于及时了解订单状态" /><br />
+								</form>
+							</div>
+							<button type="button" class="deposit">保存新地址</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 设置的提交的膜布 -->
+		<div class="cloth-wrapper">
+			<div class="cloth">
+				<p>提示</p>
+				<p>添加信息成功</p>
+			</div>
+		</div>
+		<!-- 删除时 ----设置的确定，取消的膜布 -->
+		<div class="delete-wrapper">
+			<div class="delete clearfix">
+				<p>提示</p>
+				<p>确定要删除该收货地址吗？</p>
+				<input type="button"  value="确定" class="ok"/>
+				<input type="button"  value="取消" class="notok"/>
+			</div>
+		</div>
+		<!-- 页脚部分 -->
+		<div class="footBgWrap">
+			<div class="btmlist w">
+				<ul class="clearfix">
+					<li>
+						<div class="btmIcon">正</div>
+						<h3 class="tit">正品承诺</h3>
+						<p class="desc">正品保障 假一赔十</p>
+					</li>
+					<li>
+						<div class="btmIcon">低</div>
+						<h3 class="tit">低价保证</h3>
+						<p class="desc">缩减中间环节 确保低价</p>
+					</li>
+					<li>
+						<div class="btmIcon">退</div>
+						<h3 class="tit">30天无忧退货</h3>
+						<p class="desc">国内退货 售后无忧</p>
+					</li>
+					<li>
+						<div class="btmIcon">邮</div>
+						<h3 class="tit">满88包邮</h3>
+						<p class="desc">部分特殊商品除外</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="guideList w">
+			<ul class="clearfix">
+				<li class="first">
+					<a href="#"><img src="../images/logo.png" alt="" /></a>
+					<div class="focuson">
+						<span class="label">关注我们</span>
+						<a href="#">
+							<i class="iconfont icon-weibo">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+						<a href="#">
+							<i class="iconfont icon-weixin2">
+							<!-- 还有一个二级菜单	 -->
+							</i>
+						</a>
+					</div>
+				</li>
+				<li>
+					<h3>考拉保障</h3>
+					<p><a href="#">假一赔十</a></p>
+					<p><a href="#">廉正举报</a></p>
+				</li>
+				<li>
+					<h3>新手指南</h3>
+					<p><a href="#">购物流程</a></p>
+					<p><a href="#">支付方式</a></p>
+					<p><a href="#">通关税费</a></p>
+					<p><a href="#">常见问题</a></p>
+				</li>
+				<li>
+					<h3>售后服务</h3>
+					<p><a href="#">售后政策</a></p>
+					<p><a href="#">退货流程</a></p>
+					<p><a href="#">特色服务</a></p>
+					<p><a href="#">联系客服</a></p>
+				</li>
+				<li>
+					<h3>物流配送</h3>
+					<p><a href="#">配送方式</a></p>
+					<p><a href="#">配送服务</a></p>
+					<p><a href="#">运费标准</a></p>
+					<p><a href="#">物流跟踪</a></p>
+				</li>
+				<li>
+					<h3>商家服务</h3>
+					<p><a href="#">招商合作</a></p>
+					<p><a href="#">销售联盟</a></p>
+					<p><a href="#">商家成长</a></p>
+				</li>
+				<li>
+					<h3>关于我们</h3>
+					<p><a href="#">联系我们</a></p>
+					<p><a href="#">CEO邮箱</a></p>
+					<p><a href="#">线下店</a></p>
+				</li>
+				<li>
+					<img src="../images/guideList/guideList01.png" alt="" />
+					<p>扫描下载手机版</p>
+				</li>
+				<li>
+				<img src="../images/guideList/guideList02.jpg" alt="" />
+				<p>扫描下载手机版</p>
+				</li>
+			</ul>
+		</div>
+		<div class="aboutNEST tonglan">
+			<div class="aboutNEST-xx">
+				<a href="#">隐私政策</a>
+				<span class="m-license">-</span>
+				<a href="#">考拉海购</a>
+			</div>
+			<div class="aboutNEST-xx">
+				<span class="m-license">增值电信业务经营许可证：浙B2-20160288</span>
+				<a href="#">自营经营者信息 </a>
+				<span class="m-license">（浙）网械平台备字[2018]第00007号</span>
+			</div>
+			<div class="aboutNEST-xx">
+				<a href="#"><img src="../images/aboutNEST001.png" alt=""></a>
+				<a href="#">浙公网安备 33010802002216号 </a>
+				<span class="m-license">阿里巴巴版权所有©2003-2020</span>
+				<a href="#">互联网药品信息服务资格证书编号</a>
+				<a href="#">浙ICP备16011229号</a>
+			</div>
+			<div class="f-tac">
+				<a href="#" class="KXYZ"><img src="../images/aboutNEST/aboutNEST.png" alt="" /></a>
+				<a href="#" class="u-shield"><img src="../images/aboutNEST/aboutNEST003.png" alt="" /></a>
+			</div>
+			
+		</div>
+		
+		<script src="../public/jQuery-3.4.0.js"></script>
+		<script src="../public/regions.js"></script>
+		<script src="../public/regions-picker.js"></script>
+		<script src='../public/js-cookie.js'></script>
+		<script src="personalCenter.js"></script>
+
+	</body>
+</html>
